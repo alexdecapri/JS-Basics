@@ -1,19 +1,19 @@
 //Once you complete a problem, open up Chrome and check the answer in the console.
 
-var outer = function(){
+var outer = function() {
   var name = 'Tyler';
-  return function(){
+  return function() {
     return 'The original name was ' + name;
   }
 }
 //Above you're given a function that returns another function which has a closure over the name variable.
 //Invoke outer saving the return value into another variable called 'inner'.
 
-  //Code Here
+var inner = outer();
 
 //Once you do that, invoke inner.
 
-  //Code Here
+inner();
 
 
 
@@ -32,7 +32,8 @@ var callFriend = function(){
 //Above you're given a callFriend function that returns another function.
 //Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' in your console.
 
-  //Code Here
+var newFn = callFriend();
+newFn("435-215-9248");
 
 
 
