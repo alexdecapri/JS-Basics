@@ -24,8 +24,8 @@ function isTyler(name) {
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 function getName() {
-	var userName = prompt("Name?");
-	return(userName);
+	var userName = prompt("What is your name?");
+	return userName;
 }
 
 // to check: getName();
@@ -39,7 +39,9 @@ function getName() {
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
+function welcome() {
+	alert("Welcome, " + getName());
+}
 
 
 //Next problem
@@ -69,7 +71,11 @@ function getName() {
 
 //Create a function called myName that returns your name
 
-  //Code Here
+function myName() {
+	return "Alex";
+}
+
+// to check: myName();
   
 
 
