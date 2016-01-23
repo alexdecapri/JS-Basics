@@ -51,7 +51,8 @@ function welcome() {
 
 //What is the difference between arguments and parameters?
 
-parameters are given to a function declaration, while arguments are passed in when the function is called
+parameters are given to a function declaration (like a placeholder for future things to pass in),
+while arguments are passed in when the function is called
 
 
 //Next problem
