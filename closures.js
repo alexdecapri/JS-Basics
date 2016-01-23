@@ -45,13 +45,19 @@ newFn("435-215-9248");
   Write a function called makeCounter that makes the following code work properly.
 */
 
-  //Code Here
-  var count = makeCounter();
-  count(); // 1
-  count(); // 2
-  count(); // 3
-  count(); // 4
+function makeCounter() {
+  var num = 0;
+  return function() {
+    num = num + 1;
+    return num;
+  }
+}
 
+var count = makeCounter();
+count(); // 1
+count(); // 2
+count(); // 3
+count(); // 4
 
 
 //Next Problem
