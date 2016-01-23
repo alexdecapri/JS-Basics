@@ -50,6 +50,7 @@ function makeCounter() {
   return function() {
     num = num + 1;
     return num;
+    //or return ++counter;
   }
 }
 
@@ -65,12 +66,37 @@ count(); // 4
 
 
 /*
-  Write a function named codeLove that returns the string 'I love code'. Write a second function named codeFriend that accepts the first function as it's first parameter. The second function should return a new third function. Store the third function in a variable, codeEcho which, when invoked, invokes the first, original function that was passed in, but will only ever do so once (returns null after first invocation).
+  Write a function named codeLove that returns the string 'I love code'. 
+  Write a second function named codeFriend that accepts the first function as 
+  it's first parameter. The second function should return a new third function. 
+  Store the third function in a variable, codeEcho which, when invoked, invokes 
+  the first, original function that was passed in, but will only ever do so once 
+  (returns null after first invocation).
 */
 
-  //Code Here
+//DOESN'T WORK ******** RETURNS NULL ALWAYS
+function codeLove() {
+  return "I love code";
+}
+  
 
+function codeFriend(fn) {
+  var hasRan = false;
+  return function() {
+    if (hasRan === false) {
+      hasRan = true;
+      return fn();
+    }
+    else {
+      return null;
+    }
+    return fn(codeLove);
+  }
+}
 
+var codeEcho = codeFriend(codeLove);
+
+codeEcho();
 
 //Next Problem
 
