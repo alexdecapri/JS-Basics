@@ -71,6 +71,15 @@ function checkIfFalsy(value) {
 		return "falsy";
 	}
 }
+
+// example 2:
+
+if (NaN) {
+	console.log("Hi");
+}
+
+//won't display anything
+
 // will return "falsy" if the value is a valsy value
 
 
