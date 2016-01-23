@@ -5,7 +5,17 @@ var name = 'Tyler';
 //Create a function called isTyler that accepts name as it's only parameter.
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
-  //Code Here
+function isTyler(name) {
+	if (name === "Tyler") {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+// to check: isTyler("Tyler");
+// to check: isTyler("Alex");
 
 //Next problem
 
@@ -13,8 +23,13 @@ var name = 'Tyler';
 
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
+function getName() {
+	var userName = prompt("Name?");
+	return(userName);
+}
 
-  //Code Here
+// to check: getName();
+
 
 
 //Next Problem
